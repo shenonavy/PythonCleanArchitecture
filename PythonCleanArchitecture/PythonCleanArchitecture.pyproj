@@ -17,6 +17,7 @@
     <Name>PythonCleanArchitecture</Name>
     <RootNamespace>PythonCleanArchitecture</RootNamespace>
     <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <WebBrowserPort>5001</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

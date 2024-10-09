@@ -1,1 +1,4 @@
 Flask>=2.2.3
+spacy==3.8.2
+pytextrank==3.3.0
+en-core-web-lg==3.8.0

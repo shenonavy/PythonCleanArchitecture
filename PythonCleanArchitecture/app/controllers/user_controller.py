@@ -8,7 +8,7 @@ from app.repositories.user_repository import UserRepository
 user_repository = UserRepository()
 user_service = UserService(user_repository)
 
-@router.route('/user/<int:user_id>', methods=['GET'])
+@router.route('/api/user/<int:user_id>', methods=['GET'])
 def get_user(user_id):
     user = user_service.get_user_by_id(user_id)
     # return jsonify({"user_id": user_id, "name": user['name']})
