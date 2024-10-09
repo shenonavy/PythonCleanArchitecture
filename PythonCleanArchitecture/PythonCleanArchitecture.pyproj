@@ -27,7 +27,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app\application.py" />
     <Compile Include="app\controllers\admin_controller.py" />
     <Compile Include="app\controllers\user_controller.py" />
     <Compile Include="app\controllers\__init__.py" />

@@ -4,15 +4,13 @@
 # """
 
 from flask import Flask
-from app.controllers.user_controller import user_api
-from app.controllers.admin_controller import admin_api
+from app.controllers import router
 app = Flask(__name__)
 
 # # Make the WSGI interface available at the top level so wfastcgi can get it.
 # wsgi_app = app.wsgi_app
 
-app.register_blueprint(user_api)
-app.register_blueprint(admin_api)
+app.register_blueprint(router)
 
 
 @app.route('/')
