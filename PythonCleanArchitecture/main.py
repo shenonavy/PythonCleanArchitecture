@@ -3,19 +3,22 @@
 # It contains the definition of routes and views for the application.
 # """
 
-from app.application import app
-
-# from flask import Flask
-# app = Flask(__name__)
+from flask import Flask
+from app.controllers.user_controller import user_api
+from app.controllers.admin_controller import admin_api
+app = Flask(__name__)
 
 # # Make the WSGI interface available at the top level so wfastcgi can get it.
 # wsgi_app = app.wsgi_app
 
+app.register_blueprint(user_api)
+app.register_blueprint(admin_api)
 
-# @app.route('/')
-# def hello():
-#     """Renders a sample page."""
-#     return "Hello World!"
+
+@app.route('/')
+def hello():
+    """Renders a sample page."""
+    return "---------------Api is running---------------"
 
 if __name__ == '__main__':
     import os
